@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Countdown Timer</title>
+</head>
+<body>
+
+<h1>Countdown Timer</h1>
+<p id="timer">10</p>
+<button onclick="startTimer()">Start Timer</button>
+<button onclick="stopTimer()">Stop Timer</button>
+
+<script>
+let countdown;
+const timerDisplay = document.getElementById('timer');
+
+function startTimer() {
+    let seconds = parseInt(timerDisplay.textContent);
+
+    countdown = setInterval(function() {
+        seconds--;
+
+        if (seconds < 0) {
+            clearInterval(countdown);
+            alert("Time's up!");
+        } else {
+            timerDisplay.textContent = seconds;
+            alert(seconds);
+        }
+    }, 1000); // Update timer every 1000 milliseconds (1 second)
+}
+
+function stopTimer() {
+    clearInterval(countdown); // Clear the interval set by setInterval
+}
+</script>
+
+</body>
+</html>

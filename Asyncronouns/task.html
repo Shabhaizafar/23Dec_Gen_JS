@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>setInterval and clearInterval Example</title>
+</head>
+<body>
+
+<h1>Counter</h1>
+<p id="counter">0</p>
+<button onclick="startCounter()">Start</button>
+<button onclick="stopCounter()">Stop</button>
+
+<script>
+let intervalId;
+
+function startCounter() {
+    intervalId = setInterval(incrementCounter, 1000); // Increment the counter every 1000 milliseconds (1 second)
+}
+
+function incrementCounter() {
+    const counterElement = document.getElementById('counter');
+    let currentValue = parseInt(counterElement.innerText);
+    counterElement.innerText = currentValue + 1;
+}
+
+function stopCounter() {
+    clearInterval(intervalId); // Clear the interval set by setInterval
+}
+
+</script>
+
+</body>
+</html>
+
+<!-- 
+int , char 
+1.1
+parse
+1
+ -->
