@@ -14,3 +14,5 @@
 //     ajax.send();
 // }
 // CollectData();
+
+// https://jsonplaceholder.typicode.com/posts
