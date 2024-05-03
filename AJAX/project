@@ -1,0 +1,6 @@
+create a validation form 
+
+1) dom  : promises 
+2) fetch() : jsonfile 
+3) jsonfile : access using xhr 
+    > display in another file 
