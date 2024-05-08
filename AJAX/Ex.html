@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Validation Form</title>
+    <style>
+        span{
+            color: red;
+            visibility:hidden;
+        }
+        #subbtn{
+            background-color: aqua;
+            border-radius: 5px;
+            text-align: center;
+        }
+        
+    </style>
+</head>
+<body>
+    <form style="width: 20%;margin:100px auto;background-color: lightgray;padding: 30px;border-radius: 7px;">
+        <div>
+            <label for="name">Name:</label>
+            <br />
+            <input type="text" id="Fname"  name="Fname" placeholder="Enter your name"><br>
+            <span class="error-name">*Please enter your name</span>
+        </div>
+        <!-- <div>
+            <label for="email">Email:</label>
+            <br />
+            <input type="email" id="email" placeholder=" " ><br>
+            <span class="error-email">*Please enter a valid email address</span>
+        </div>
+        <div>
+            <label for="password">Password:</label>
+            <br />
+            <input type="password" id="password" placeholder=" " ><br>
+            <span class="error-pwd">*Please enter a valid password</span>
+        </div>
+        <div class="mb-3 form-check">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1" name="checkme" >
+            <label class="form-check-label" for="exampleCheck1">Check me out</label>
+            <span  class="error-checkme">*Please Select</span>
+          </div> -->
+        <button type="submit" class="btn btn-primary" id="subbtn">Submit</button>
+    </form>
+    <script src="form2.js"></script>
+</body>
+</html>

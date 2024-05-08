@@ -17,6 +17,11 @@
 <body>
     
     <form style="width: 50%;margin:100px auto;background-color: lightgray;padding: 30px;">
+      <div class="mb-3">
+        <label for="fname" class="form-label">Enter a String</label>
+        <input type="text" class="form-control" id="fname" name="fname" minlength="2" maxlength="20">
+          <span class="error-fname">*Please enter a String </span>
+      </div>
         <!-- <div class="mb-3">
           <label for="exampleInputEmail1" class="form-label">Email address</label>
           <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="email">
@@ -26,12 +31,12 @@
           <label for="exampleInputPassword1" class="form-label">Password</label>
           <input type="password" class="form-control" id="exampleInputPassword1" name="pwn"> 
           <span  class="error-pwd">*Please enter pwd</span>
-        </div> -->
+        </div>
         <div class="mb-3 form-check">
           <input type="checkbox" class="form-check-input" id="exampleCheck1" name="checkme" >
           <label class="form-check-label" for="exampleCheck1">Check me out</label>
           <span  class="error-checkme">*Please Select</span>
-        </div>
+        </div> -->
         <button type="submit" class="btn btn-primary" id="subbtn">Submit</button>
       </form>
 
