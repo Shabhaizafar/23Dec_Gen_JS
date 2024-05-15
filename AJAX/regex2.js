@@ -55,5 +55,31 @@
 
 // /?@gmail.com/
 
-var reg = /R?yal/;
-console.log(reg.test("Ryal"));
+// var reg = /R?yal/;
+// console.log(reg.test("Ryal"));
+
+
+//////////////////////////////////////////////////
+// const btn = document.querySelector('button');
+
+// btn.addEventListener('click',(e)=>{
+//     e.preventDefault();
+//     var input = document.querySelector('input');
+//     const reg = /^[A-Z][a-z]{1,2}$/;  //name 
+//     // var phoneNo = /^[6-9][0-9]{9}$/
+//     // var email = /^[a-z0-9A-Z]+@[a-zA-Z]+\.[a-zA-Z]{2,}$/
+//     // var password = /^(?=.*[A-Z])(?=.*[0-9])(?=.*[#$&*@\.]).{8,15}$/
+    
+//     var text = document.querySelector('input').value;
+//     var logic = reg.test(text);
+//     if(logic==false)
+//     {
+//         input.classList.add('error');
+//         input.classList.remove('success');
+//     }
+//     else{
+//         input.classList.add('success');
+//     }
+// });
+
+// ---------------------------------- //
